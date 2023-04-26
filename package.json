@@ -9,8 +9,7 @@
     "lint": "next lint",
     "format": "prettier --write .",
     "test": "vitest",
-    "coverage": "vitest run --coverage",
-    "export": "next export"
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@dqbd/tiktoken": "^1.0.2",
