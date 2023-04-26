@@ -4,8 +4,6 @@ const { i18n } = require('./next-i18next.config');
 const nextConfig = {
   i18n,
   reactStrictMode: true,
-  experimental: { runtime: 'edge'},
-  // runtime: 'experimental-edge',
 
   webpack(config, { isServer, dev }) {
     config.experiments = {
