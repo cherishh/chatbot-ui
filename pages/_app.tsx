@@ -3,6 +3,7 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 
 import { appWithTranslation } from 'next-i18next';
 import type { AppProps } from 'next/app';
+import { Analytics } from '@vercel/analytics/react';
 import { Inter } from 'next/font/google';
 
 import '@/styles/globals.css';
@@ -18,6 +19,7 @@ function App({ Component, pageProps }: AppProps<{}>) {
       <QueryClientProvider client={queryClient}>
         <Component {...pageProps} />
       </QueryClientProvider>
+      <Analytics />
     </div>
   );
 }
